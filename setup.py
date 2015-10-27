@@ -60,14 +60,13 @@ setup(
     long_description="RelationManager package which connects with a neo4j graph and sends citations to be stored as a graph. "
                      "Also provides querying to get information about the references, citations, and authors related "
                      "to some record id.",
-    packages=["citator"],
+    packages=["relations"],
     zip_safe=False,
     platforms='any',
-
     install_requires=[
         "neomodel",
     ],
-    test_suite='inspire_relations.tests',
+    test_suite='tests',
     tests_require=test_requirements,
     cmdclass={'test': PyTest}
 )

@@ -3,9 +3,15 @@ language: python
 python:
   - "2.7"
 
+services:
+  - neo4j
+
 cache:
   - apt
   - pip
+
+env:
+  - NEO4J_REST_URL=http://localhost:7474/db/data/
 
 addons:
   apt:
