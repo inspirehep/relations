@@ -1,0 +1,28 @@
+language: python
+
+python:
+  - "2.7"
+
+cache:
+  - apt
+  - pip
+
+addons:
+  apt:
+    packages:
+    - python-dev
+
+before_install:
+  - "travis_retry pip install --upgrade pip"
+
+install:
+  - "travis_retry pip install -r requirements.txt"
+
+script:
+  - python setup.py install
+  - py.test tests
+
+after_success:
+  - coveralls
+
+sudo: false
