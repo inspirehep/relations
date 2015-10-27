@@ -8,7 +8,7 @@
 
 [![License](https://img.shields.io/github/license/inspirehep/relations.svg)](https://github.com/inspirehep/relations/master/LICENSE.txt)
 
-A simple module built on top of neomodels, py2neo to persist citation graph information to a neo4j instance.
+A simple module built on top of neomodels, py2neo to persist citation graph information to a neo4j graph database.
 
 ### Installation
 
